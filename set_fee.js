@@ -4,7 +4,7 @@ async function doPostRequest() {
 
     //let data = { method: 'log_tx', address: '0xC925F19cb5f22F936524D2E8b17332a6f4338751', hash: '0xc8d58343bc2e8214b444a6ab95756388448ac1cad8814bd412a17fd15adff514' };
     
-    let res = await axios.post('https://api.interchained.org/api.php', querystring.stringify({
+    let res = await axios.post('https://bridge-api.interchained.org/api.php', querystring.stringify({
             method: 'set_fee', //gave the values directly for testing
 	    path: 'ETH-KEK',
 	    app_spec_key: '0x3215614be',
